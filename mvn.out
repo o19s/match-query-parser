@@ -1,0 +1,984 @@
+Apache Maven 3.0.5
+Maven home: /usr/share/maven
+Java version: 1.8.0_91, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.13.0-92-generic", arch: "amd64", family: "unix"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/share/maven/conf/settings.xml
+[DEBUG] Reading user settings from /home/doug/.m2/settings.xml
+[DEBUG] Using local repository at /home/doug/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for /home/doug/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.o19s.solr.search:match-query-parser:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.o19s.solr.search:match-query-parser:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building match-query-parser 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.3:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <filters>${project.build.filters}</filters>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project>${project}</project>
+  <resources>${project.resources}</resources>
+  <session>${session}</session>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.8</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.8</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.3:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <filters>${project.build.filters}</filters>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project>${project}</project>
+  <resources>${project.testResources}</resources>
+  <session>${session}</session>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.8</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.8</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.10:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">true</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository>${localRepository}</localRepository>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories>${project.pluginArtifactRepositories}</remoteRepositories>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <session>${session}</session>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] com.o19s.solr.search:match-query-parser:jar:1.0-SNAPSHOT
+[DEBUG]    org.apache.lucene:lucene-test-framework:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-codecs:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-core:jar:6.1.0:compile
+[DEBUG]       com.carrotsearch.randomizedtesting:randomizedtesting-runner:jar:2.3.4:compile
+[DEBUG]       junit:junit:jar:4.10:compile
+[DEBUG]    org.apache.solr:solr-core:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-analyzers-common:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-analyzers-kuromoji:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-analyzers-phonetic:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-backward-codecs:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-classification:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-expressions:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-grouping:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-highlighter:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-join:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-memory:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-misc:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-queries:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-queryparser:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-sandbox:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-spatial-extras:jar:6.1.0:compile
+[DEBUG]       org.apache.lucene:lucene-suggest:jar:6.1.0:compile
+[DEBUG]       com.carrotsearch:hppc:jar:0.7.1:compile
+[DEBUG]       com.facebook.presto:presto-parser:jar:0.122:compile
+[DEBUG]       com.fasterxml.jackson.core:jackson-core:jar:2.5.4:compile
+[DEBUG]       com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.5.4:compile
+[DEBUG]       com.github.ben-manes.caffeine:caffeine:jar:1.0.1:compile
+[DEBUG]       com.google.guava:guava:jar:14.0.1:compile
+[DEBUG]       com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[DEBUG]       com.tdunning:t-digest:jar:3.1:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.10:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.2:compile
+[DEBUG]       commons-configuration:commons-configuration:jar:1.6:compile
+[DEBUG]       commons-fileupload:commons-fileupload:jar:1.3.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]       io.airlift:slice:jar:0.10:compile
+[DEBUG]       javax.servlet:javax.servlet-api:jar:3.1.0:compile
+[DEBUG]       joda-time:joda-time:jar:2.2:compile
+[DEBUG]       log4j:log4j:jar:1.2.17:compile
+[DEBUG]       org.antlr:antlr4-runtime:jar:4.5.1-1:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.3:compile
+[DEBUG]       org.apache.hadoop:hadoop-annotations:jar:2.6.0:compile
+[DEBUG]          jdk.tools:jdk.tools:jar:1.6:system
+[DEBUG]       org.apache.hadoop:hadoop-auth:jar:2.6.0:compile
+[DEBUG]       org.apache.hadoop:hadoop-common:jar:2.6.0:compile
+[DEBUG]       org.apache.hadoop:hadoop-hdfs:jar:2.6.0:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.4.1:compile
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.4.1:compile
+[DEBUG]       org.apache.httpcomponents:httpmime:jar:4.4.1:compile
+[DEBUG]       org.apache.zookeeper:zookeeper:jar:3.4.6:compile
+[DEBUG]       org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[DEBUG]       org.codehaus.woodstox:woodstox-core-asl:jar:4.4.1:compile
+[DEBUG]       org.eclipse.jetty:jetty-continuation:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-deploy:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-http:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-io:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-jmx:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-rewrite:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-security:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-server:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-servlet:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-servlets:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-util:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-webapp:jar:9.3.8.v20160314:compile
+[DEBUG]       org.eclipse.jetty:jetty-xml:jar:9.3.8.v20160314:compile
+[DEBUG]       org.htrace:htrace-core:jar:3.0.4:compile
+[DEBUG]       org.locationtech.spatial4j:spatial4j:jar:0.6:compile
+[DEBUG]       org.noggit:noggit:jar:0.6:compile
+[DEBUG]       org.ow2.asm:asm:jar:5.0.4:compile
+[DEBUG]       org.ow2.asm:asm-commons:jar:5.0.4:compile
+[DEBUG]       org.restlet.jee:org.restlet:jar:2.3.0:compile
+[DEBUG]       org.restlet.jee:org.restlet.ext.servlet:jar:2.3.0:compile
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.7.7:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.7:compile
+[DEBUG]    org.apache.solr:solr-solrj:jar:6.1.0:compile
+[DEBUG]    org.apache.solr:solr-test-framework:jar:6.1.0:compile
+[DEBUG]       com.carrotsearch.randomizedtesting:junit4-ant:jar:2.3.4:compile
+[DEBUG]       org.apache.ant:ant:jar:1.8.2:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ match-query-parser ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.3:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.5.6:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.0-beta-2:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.6:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.3
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.3
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.3
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.3
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.0-beta-2
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.3:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.3, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.3:resources' with basic configurator -->
+[DEBUG]   (f) filters = []
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/doug/workspace/match-query-parser/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT @ /home/doug/workspace/match-query-parser/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/doug/workspace/match-query-parser/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@56e8b606
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.IM_CONFIG_PHASE=1, env.LESSOPEN=| /usr/bin/lesspipe %s, sun.java.launcher=SUN_STANDARD, env.QT_IM_MODULE=ibus, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, env.UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2501, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, env.PWD=/home/doug/ws/match-query-parser, sun.desktop=gnome, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, downloadJavadocs=true, java.runtime.version=1.8.0_91-8u91-b14-0ubuntu4~14.04-b14, env.GTK_IM_MODULE=ibus, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, env.UPSTART_EVENTS=started starting, env.VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh, env.XDG_VTNR=7, env.DISPLAY=:0, env.PYENV_SHELL=bash, env.DIRENV_DIR=-/home/doug/workspace/match-query-parser, user.name=doug, env.QT4_IM_MODULE=xim, env._=/usr/bin/mvn, env.WORKON_HOME=/home/doug/.virtualenvs, maven.build.version=Apache Maven 3.0.5, env.USER=doug, env.SHELL=/bin/bash, env.DESKTOP_SESSION=ubuntu, env.XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, env.NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript, env.PATH=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/:/home/doug/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games, env.XDG_CURRENT_DESKTOP=Unity, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, classworlds.conf=/usr/share/maven/bin/m2.conf, env.TEXTDOMAIN=im-config, env.UPSTART_JOB=unity-settings-daemon, env.SELINUX_INIT=YES, env.PYENV_ROOT=/home/doug/.pyenv, java.version=1.8.0_91, user.timezone=, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-JRsgKuzAx7, sun.arch.data.model=64, env.COMPIZ_CONFIG_PROFILE=ubuntu, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, java.class.version=52.0, env.GDMSESSION=ubuntu, env.DIRENV_DIFF=eJy8kc1qwzAQhN9F56jbgNMG3wwNJIW0pYRcg2wt_pWlaiuXEPLuVWSSGmPoLSd7Zr5h2dWJGRaf2EeyW7OYQaEVgtQuh7RsIdc6b5BnjXaSk6wvZjxgHswR2w6oKBVN-GPaptN074_oIB1ZaHQmGqCRvsm_IPz08ublQiENe8Fg5xlrL2u_bD5Xb_uD__jl-WD6j7Y1GZEhKPGdFfzLoT1yIyyhZbNrb7vbbFe-OY-eH5fRIpovfPaa7JPD-j0E_eAyhapTUIlO8CXXBttK1lwo-RSBL1xv_y9bWQzPcr8znX8DAAD__-3AuSw=, user.country=US, env.GNOME_KEYRING_PID=2497, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, java.vm.info=mixed mode, env.VIRTUALENVWRAPPER_VIRTUALENV_CLONE=/usr/local/bin/virtualenv-clone, env.LOGNAME=doug, os.version=3.13.0-92-generic, maven.compiler.target=1.8, path.separator=:, java.vm.version=25.91-b14, env.UPSTART_INSTANCE=, env.VIRTUALENVWRAPPER_LAZY_SCRIPT=/usr/local/bin/virtualenvwrapper_lazy.sh, env.TEXTDOMAINDIR=/usr/share/locale/, env.LANGUAGE=en_US, env.ELASTICSEARCH_URL=http://192.168.12.5:9200, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, env.QT_QPA_PLATFORMTHEME=appmenu-qt5, env.JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/, env.SESSIONTYPE=gnome-session, env.TERM=xterm, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, env.XMODIFIERS=@im=ibus, env.GDM_LANG=en_US, user.home=/home/doug, env.JOB=gnome-session, env.OLDPWD=/home/doug/ws/match-query-parser, java.specification.vendor=Oracle Corporation, env.COMP_WORDBREAKS= 	
+"'><;|&(:, env.WINDOWID=79703080, env.VTE_VERSION=3409, java.vendor.url=http://java.oracle.com/, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, env.XDG_SEAT=seat0, java.vm.vendor=Oracle Corporation, java.runtime.name=OpenJDK Runtime Environment, maven.home=/usr/share/maven, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X test, env.XDG_SESSION_ID=c6, maven.version=3.0.5, env.PYENV_VIRTUALENVWRAPPER_PYENV_VERSION=system, java.vm.specification.name=Java Virtual Machine Specification, env.VIRTUALENVWRAPPER_HOOK_DIR=/home/doug/.virtualenvs, env.RBENV_SHELL=bash, java.vm.specification.version=1.8, sun.os.patch.level=unknown, sun.cpu.endian=little, downloadSources=true, env.HOME=/home/doug, env.VIRTUALENVWRAPPER_PROJECT_FILENAME=.project, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, java.io.tmpdir=/tmp, env.DIRENV_MTIME=1470845415, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/run/user/1000/keyring-DCRIrA/ssh, maven.compiler.source=1.8, env.CLUTTER_IM_MODULE=xim, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, os.arch=amd64, env.INSTANCE=Unity, env.VIRTUALENVWRAPPER_PYTHON=/usr/bin/python, env.XDG_RUNTIME_DIR=/run/user/1000, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, env.XAUTHORITY=/home/doug/.Xauthority, user.dir=/home/doug/workspace/match-query-parser, env.PS1=\[\e]0;\u@\h: \w\a\]\[\033[0;38m\]\u@\h$\w\[\033[1;30m\]$(parse_git_branch)\[\033[0;38m\] $ , env.MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, env.GTK_MODULES=overlay-scrollbar:unity-gtk-module, line.separator=
+, java.vm.name=OpenJDK 64-Bit Server VM, env.COLORTERM=gnome-terminal, env.XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/doug, env.VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv, file.encoding=UTF-8, env.GPG_AGENT_INFO=/run/user/1000/keyring-DCRIrA/gpg:0:1, java.specification.version=1.8, env.GNOME_KEYRING_CONTROL=/run/user/1000/keyring-DCRIrA, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, env.LESSCLOSE=/usr/bin/lesspipe %s %s}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/doug/workspace/match-query-parser/src/main/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/doug/workspace/match-query-parser/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ match-query-parser ---
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.5.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.4:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.7:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.5.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.4
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.7
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/doug/workspace/match-query-parser
+[DEBUG]   (f) buildDirectory = /home/doug/workspace/match-query-parser/target
+[DEBUG]   (f) classpathElements = [/home/doug/workspace/match-query-parser/target/classes, /home/doug/.m2/repository/org/apache/lucene/lucene-test-framework/6.1.0/lucene-test-framework-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-codecs/6.1.0/lucene-codecs-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-core/6.1.0/lucene-core-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/randomizedtesting-runner/2.3.4/randomizedtesting-runner-2.3.4.jar, /home/doug/.m2/repository/junit/junit/4.10/junit-4.10.jar, /home/doug/.m2/repository/org/apache/solr/solr-core/6.1.0/solr-core-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-common/6.1.0/lucene-analyzers-common-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-kuromoji/6.1.0/lucene-analyzers-kuromoji-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-phonetic/6.1.0/lucene-analyzers-phonetic-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-backward-codecs/6.1.0/lucene-backward-codecs-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-classification/6.1.0/lucene-classification-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-expressions/6.1.0/lucene-expressions-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-grouping/6.1.0/lucene-grouping-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-highlighter/6.1.0/lucene-highlighter-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-join/6.1.0/lucene-join-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-memory/6.1.0/lucene-memory-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-misc/6.1.0/lucene-misc-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-queries/6.1.0/lucene-queries-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-queryparser/6.1.0/lucene-queryparser-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-sandbox/6.1.0/lucene-sandbox-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-spatial-extras/6.1.0/lucene-spatial-extras-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-suggest/6.1.0/lucene-suggest-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar, /home/doug/.m2/repository/com/facebook/presto/presto-parser/0.122/presto-parser-0.122.jar, /home/doug/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar, /home/doug/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.5.4/jackson-dataformat-smile-2.5.4.jar, /home/doug/.m2/repository/com/github/ben-manes/caffeine/caffeine/1.0.1/caffeine-1.0.1.jar, /home/doug/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar, /home/doug/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar, /home/doug/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar, /home/doug/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar, /home/doug/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, /home/doug/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, /home/doug/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar, /home/doug/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar, /home/doug/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar, /home/doug/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar, /home/doug/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, /home/doug/.m2/repository/io/airlift/slice/0.10/slice-0.10.jar, /home/doug/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/doug/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar, /home/doug/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, /home/doug/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar, /home/doug/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.0/hadoop-annotations-2.6.0.jar, /usr/lib/jvm/java-8-openjdk-amd64/jre/../lib/tools.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.0/hadoop-auth-2.6.0.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.0/hadoop-hdfs-2.6.0.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar, /home/doug/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar, /home/doug/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar, /home/doug/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-deploy/9.3.8.v20160314/jetty-deploy-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-jmx/9.3.8.v20160314/jetty-jmx-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-rewrite/9.3.8.v20160314/jetty-rewrite-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.8.v20160314/jetty-webapp-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.8.v20160314/jetty-xml-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar, /home/doug/.m2/repository/org/locationtech/spatial4j/spatial4j/0.6/spatial4j-0.6.jar, /home/doug/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar, /home/doug/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /home/doug/.m2/repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar, /home/doug/.m2/repository/org/restlet/jee/org.restlet/2.3.0/org.restlet-2.3.0.jar, /home/doug/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.3.0/org.restlet.ext.servlet-2.3.0.jar, /home/doug/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar, /home/doug/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar, /home/doug/.m2/repository/org/apache/solr/solr-solrj/6.1.0/solr-solrj-6.1.0.jar, /home/doug/.m2/repository/org/apache/solr/solr-test-framework/6.1.0/solr-test-framework-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/junit4-ant/2.3.4/junit4-ant-2.3.4.jar, /home/doug/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/doug/workspace/match-query-parser/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/doug/workspace/match-query-parser/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/doug/workspace/match-query-parser/target/classes
+[DEBUG]   (f) project = MavenProject: com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT @ /home/doug/workspace/match-query-parser/pom.xml
+[DEBUG]   (f) projectArtifact = com.o19s.solr.search:match-query-parser:jar:1.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@56e8b606
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/home/doug/workspace/match-query-parser/src/main/java]
+[DEBUG] Classpath: [/home/doug/workspace/match-query-parser/target/classes
+ /home/doug/.m2/repository/org/apache/lucene/lucene-test-framework/6.1.0/lucene-test-framework-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-codecs/6.1.0/lucene-codecs-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-core/6.1.0/lucene-core-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/randomizedtesting-runner/2.3.4/randomizedtesting-runner-2.3.4.jar
+ /home/doug/.m2/repository/junit/junit/4.10/junit-4.10.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-core/6.1.0/solr-core-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-common/6.1.0/lucene-analyzers-common-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-kuromoji/6.1.0/lucene-analyzers-kuromoji-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-phonetic/6.1.0/lucene-analyzers-phonetic-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-backward-codecs/6.1.0/lucene-backward-codecs-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-classification/6.1.0/lucene-classification-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-expressions/6.1.0/lucene-expressions-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-grouping/6.1.0/lucene-grouping-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-highlighter/6.1.0/lucene-highlighter-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-join/6.1.0/lucene-join-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-memory/6.1.0/lucene-memory-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-misc/6.1.0/lucene-misc-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-queries/6.1.0/lucene-queries-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-queryparser/6.1.0/lucene-queryparser-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-sandbox/6.1.0/lucene-sandbox-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-spatial-extras/6.1.0/lucene-spatial-extras-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-suggest/6.1.0/lucene-suggest-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
+ /home/doug/.m2/repository/com/facebook/presto/presto-parser/0.122/presto-parser-0.122.jar
+ /home/doug/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar
+ /home/doug/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.5.4/jackson-dataformat-smile-2.5.4.jar
+ /home/doug/.m2/repository/com/github/ben-manes/caffeine/caffeine/1.0.1/caffeine-1.0.1.jar
+ /home/doug/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+ /home/doug/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+ /home/doug/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar
+ /home/doug/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+ /home/doug/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+ /home/doug/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+ /home/doug/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+ /home/doug/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+ /home/doug/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar
+ /home/doug/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+ /home/doug/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+ /home/doug/.m2/repository/io/airlift/slice/0.10/slice-0.10.jar
+ /home/doug/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
+ /home/doug/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar
+ /home/doug/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+ /home/doug/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+ /home/doug/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.0/hadoop-annotations-2.6.0.jar
+ /usr/lib/jvm/java-8-openjdk-amd64/jre/../lib/tools.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.0/hadoop-auth-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.0/hadoop-hdfs-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar
+ /home/doug/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar
+ /home/doug/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-deploy/9.3.8.v20160314/jetty-deploy-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-jmx/9.3.8.v20160314/jetty-jmx-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-rewrite/9.3.8.v20160314/jetty-rewrite-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.8.v20160314/jetty-webapp-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.8.v20160314/jetty-xml-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar
+ /home/doug/.m2/repository/org/locationtech/spatial4j/spatial4j/0.6/spatial4j-0.6.jar
+ /home/doug/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar
+ /home/doug/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar
+ /home/doug/.m2/repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar
+ /home/doug/.m2/repository/org/restlet/jee/org.restlet/2.3.0/org.restlet-2.3.0.jar
+ /home/doug/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.3.0/org.restlet.ext.servlet-2.3.0.jar
+ /home/doug/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar
+ /home/doug/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-solrj/6.1.0/solr-solrj-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-test-framework/6.1.0/solr-test-framework-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/junit4-ant/2.3.4/junit4-ant-2.3.4.jar
+ /home/doug/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar]
+[DEBUG] Output directory: /home/doug/workspace/match-query-parser/target/classes
+[DEBUG] Adding /home/doug/workspace/match-query-parser/target/generated-sources/annotations to compile source roots:
+  /home/doug/workspace/match-query-parser/src/main/java
+[DEBUG] New compile source roots:
+  /home/doug/workspace/match-query-parser/src/main/java
+  /home/doug/workspace/match-query-parser/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ match-query-parser ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.3:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.3, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.3:testResources' with basic configurator -->
+[DEBUG]   (f) filters = []
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/doug/workspace/match-query-parser/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT @ /home/doug/workspace/match-query-parser/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/doug/workspace/match-query-parser/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@56e8b606
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.IM_CONFIG_PHASE=1, env.LESSOPEN=| /usr/bin/lesspipe %s, sun.java.launcher=SUN_STANDARD, env.QT_IM_MODULE=ibus, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, env.UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2501, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, env.PWD=/home/doug/ws/match-query-parser, sun.desktop=gnome, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, downloadJavadocs=true, java.runtime.version=1.8.0_91-8u91-b14-0ubuntu4~14.04-b14, env.GTK_IM_MODULE=ibus, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, env.UPSTART_EVENTS=started starting, env.VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh, env.XDG_VTNR=7, env.DISPLAY=:0, env.PYENV_SHELL=bash, env.DIRENV_DIR=-/home/doug/workspace/match-query-parser, user.name=doug, env.QT4_IM_MODULE=xim, env._=/usr/bin/mvn, env.WORKON_HOME=/home/doug/.virtualenvs, maven.build.version=Apache Maven 3.0.5, env.USER=doug, env.SHELL=/bin/bash, env.DESKTOP_SESSION=ubuntu, env.XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, env.NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript, env.PATH=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/:/home/doug/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games, env.XDG_CURRENT_DESKTOP=Unity, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, classworlds.conf=/usr/share/maven/bin/m2.conf, env.TEXTDOMAIN=im-config, env.UPSTART_JOB=unity-settings-daemon, env.SELINUX_INIT=YES, env.PYENV_ROOT=/home/doug/.pyenv, java.version=1.8.0_91, user.timezone=, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-JRsgKuzAx7, sun.arch.data.model=64, env.COMPIZ_CONFIG_PROFILE=ubuntu, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, java.class.version=52.0, env.GDMSESSION=ubuntu, env.DIRENV_DIFF=eJy8kc1qwzAQhN9F56jbgNMG3wwNJIW0pYRcg2wt_pWlaiuXEPLuVWSSGmPoLSd7Zr5h2dWJGRaf2EeyW7OYQaEVgtQuh7RsIdc6b5BnjXaSk6wvZjxgHswR2w6oKBVN-GPaptN074_oIB1ZaHQmGqCRvsm_IPz08ublQiENe8Fg5xlrL2u_bD5Xb_uD__jl-WD6j7Y1GZEhKPGdFfzLoT1yIyyhZbNrb7vbbFe-OY-eH5fRIpovfPaa7JPD-j0E_eAyhapTUIlO8CXXBttK1lwo-RSBL1xv_y9bWQzPcr8znX8DAAD__-3AuSw=, user.country=US, env.GNOME_KEYRING_PID=2497, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, java.vm.info=mixed mode, env.VIRTUALENVWRAPPER_VIRTUALENV_CLONE=/usr/local/bin/virtualenv-clone, env.LOGNAME=doug, os.version=3.13.0-92-generic, maven.compiler.target=1.8, path.separator=:, java.vm.version=25.91-b14, env.UPSTART_INSTANCE=, env.VIRTUALENVWRAPPER_LAZY_SCRIPT=/usr/local/bin/virtualenvwrapper_lazy.sh, env.TEXTDOMAINDIR=/usr/share/locale/, env.LANGUAGE=en_US, env.ELASTICSEARCH_URL=http://192.168.12.5:9200, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, env.QT_QPA_PLATFORMTHEME=appmenu-qt5, env.JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/, env.SESSIONTYPE=gnome-session, env.TERM=xterm, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, env.XMODIFIERS=@im=ibus, env.GDM_LANG=en_US, user.home=/home/doug, env.JOB=gnome-session, env.OLDPWD=/home/doug/ws/match-query-parser, java.specification.vendor=Oracle Corporation, env.COMP_WORDBREAKS= 	
+"'><;|&(:, env.WINDOWID=79703080, env.VTE_VERSION=3409, java.vendor.url=http://java.oracle.com/, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, env.XDG_SEAT=seat0, java.vm.vendor=Oracle Corporation, java.runtime.name=OpenJDK Runtime Environment, maven.home=/usr/share/maven, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X test, env.XDG_SESSION_ID=c6, maven.version=3.0.5, env.PYENV_VIRTUALENVWRAPPER_PYENV_VERSION=system, java.vm.specification.name=Java Virtual Machine Specification, env.VIRTUALENVWRAPPER_HOOK_DIR=/home/doug/.virtualenvs, env.RBENV_SHELL=bash, java.vm.specification.version=1.8, sun.os.patch.level=unknown, sun.cpu.endian=little, downloadSources=true, env.HOME=/home/doug, env.VIRTUALENVWRAPPER_PROJECT_FILENAME=.project, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, java.io.tmpdir=/tmp, env.DIRENV_MTIME=1470845415, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/run/user/1000/keyring-DCRIrA/ssh, maven.compiler.source=1.8, env.CLUTTER_IM_MODULE=xim, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, os.arch=amd64, env.INSTANCE=Unity, env.VIRTUALENVWRAPPER_PYTHON=/usr/bin/python, env.XDG_RUNTIME_DIR=/run/user/1000, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, env.XAUTHORITY=/home/doug/.Xauthority, user.dir=/home/doug/workspace/match-query-parser, env.PS1=\[\e]0;\u@\h: \w\a\]\[\033[0;38m\]\u@\h$\w\[\033[1;30m\]$(parse_git_branch)\[\033[0;38m\] $ , env.MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, env.GTK_MODULES=overlay-scrollbar:unity-gtk-module, line.separator=
+, java.vm.name=OpenJDK 64-Bit Server VM, env.COLORTERM=gnome-terminal, env.XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/doug, env.VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv, file.encoding=UTF-8, env.GPG_AGENT_INFO=/run/user/1000/keyring-DCRIrA/gpg:0:1, java.specification.version=1.8, env.GNOME_KEYRING_CONTROL=/run/user/1000/keyring-DCRIrA, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, env.LESSCLOSE=/usr/bin/lesspipe %s %s}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/doug/workspace/match-query-parser/src/test/resources
+excludes []
+includes []
+[INFO] Copying 3 resources
+[DEBUG] file solr.xml has a filtered file extension
+[DEBUG] copy /home/doug/workspace/match-query-parser/src/test/resources/solr/solr.xml to /home/doug/workspace/match-query-parser/target/test-classes/solr/solr.xml
+[DEBUG] file solrconfig.xml has a filtered file extension
+[DEBUG] copy /home/doug/workspace/match-query-parser/src/test/resources/solr/collection1/conf/solrconfig.xml to /home/doug/workspace/match-query-parser/target/test-classes/solr/collection1/conf/solrconfig.xml
+[DEBUG] file schema.xml has a filtered file extension
+[DEBUG] copy /home/doug/workspace/match-query-parser/src/test/resources/solr/collection1/conf/schema.xml to /home/doug/workspace/match-query-parser/target/test-classes/solr/collection1/conf/schema.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ match-query-parser ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/doug/workspace/match-query-parser
+[DEBUG]   (f) buildDirectory = /home/doug/workspace/match-query-parser/target
+[DEBUG]   (f) classpathElements = [/home/doug/workspace/match-query-parser/target/test-classes, /home/doug/workspace/match-query-parser/target/classes, /home/doug/.m2/repository/org/apache/lucene/lucene-test-framework/6.1.0/lucene-test-framework-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-codecs/6.1.0/lucene-codecs-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-core/6.1.0/lucene-core-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/randomizedtesting-runner/2.3.4/randomizedtesting-runner-2.3.4.jar, /home/doug/.m2/repository/junit/junit/4.10/junit-4.10.jar, /home/doug/.m2/repository/org/apache/solr/solr-core/6.1.0/solr-core-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-common/6.1.0/lucene-analyzers-common-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-kuromoji/6.1.0/lucene-analyzers-kuromoji-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-phonetic/6.1.0/lucene-analyzers-phonetic-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-backward-codecs/6.1.0/lucene-backward-codecs-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-classification/6.1.0/lucene-classification-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-expressions/6.1.0/lucene-expressions-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-grouping/6.1.0/lucene-grouping-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-highlighter/6.1.0/lucene-highlighter-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-join/6.1.0/lucene-join-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-memory/6.1.0/lucene-memory-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-misc/6.1.0/lucene-misc-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-queries/6.1.0/lucene-queries-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-queryparser/6.1.0/lucene-queryparser-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-sandbox/6.1.0/lucene-sandbox-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-spatial-extras/6.1.0/lucene-spatial-extras-6.1.0.jar, /home/doug/.m2/repository/org/apache/lucene/lucene-suggest/6.1.0/lucene-suggest-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar, /home/doug/.m2/repository/com/facebook/presto/presto-parser/0.122/presto-parser-0.122.jar, /home/doug/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar, /home/doug/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.5.4/jackson-dataformat-smile-2.5.4.jar, /home/doug/.m2/repository/com/github/ben-manes/caffeine/caffeine/1.0.1/caffeine-1.0.1.jar, /home/doug/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar, /home/doug/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar, /home/doug/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar, /home/doug/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar, /home/doug/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, /home/doug/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, /home/doug/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar, /home/doug/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar, /home/doug/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar, /home/doug/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar, /home/doug/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, /home/doug/.m2/repository/io/airlift/slice/0.10/slice-0.10.jar, /home/doug/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/doug/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar, /home/doug/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, /home/doug/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar, /home/doug/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.0/hadoop-annotations-2.6.0.jar, /usr/lib/jvm/java-8-openjdk-amd64/jre/../lib/tools.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.0/hadoop-auth-2.6.0.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar, /home/doug/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.0/hadoop-hdfs-2.6.0.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar, /home/doug/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar, /home/doug/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar, /home/doug/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar, /home/doug/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-deploy/9.3.8.v20160314/jetty-deploy-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-jmx/9.3.8.v20160314/jetty-jmx-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-rewrite/9.3.8.v20160314/jetty-rewrite-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.8.v20160314/jetty-webapp-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.8.v20160314/jetty-xml-9.3.8.v20160314.jar, /home/doug/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar, /home/doug/.m2/repository/org/locationtech/spatial4j/spatial4j/0.6/spatial4j-0.6.jar, /home/doug/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar, /home/doug/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /home/doug/.m2/repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar, /home/doug/.m2/repository/org/restlet/jee/org.restlet/2.3.0/org.restlet-2.3.0.jar, /home/doug/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.3.0/org.restlet.ext.servlet-2.3.0.jar, /home/doug/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar, /home/doug/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar, /home/doug/.m2/repository/org/apache/solr/solr-solrj/6.1.0/solr-solrj-6.1.0.jar, /home/doug/.m2/repository/org/apache/solr/solr-test-framework/6.1.0/solr-test-framework-6.1.0.jar, /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/junit4-ant/2.3.4/junit4-ant-2.3.4.jar, /home/doug/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/doug/workspace/match-query-parser/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/doug/workspace/match-query-parser/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/doug/workspace/match-query-parser/target/test-classes
+[DEBUG]   (f) project = MavenProject: com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT @ /home/doug/workspace/match-query-parser/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@56e8b606
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/home/doug/workspace/match-query-parser/src/test/java]
+[DEBUG] Classpath: [/home/doug/workspace/match-query-parser/target/test-classes
+ /home/doug/workspace/match-query-parser/target/classes
+ /home/doug/.m2/repository/org/apache/lucene/lucene-test-framework/6.1.0/lucene-test-framework-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-codecs/6.1.0/lucene-codecs-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-core/6.1.0/lucene-core-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/randomizedtesting-runner/2.3.4/randomizedtesting-runner-2.3.4.jar
+ /home/doug/.m2/repository/junit/junit/4.10/junit-4.10.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-core/6.1.0/solr-core-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-common/6.1.0/lucene-analyzers-common-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-kuromoji/6.1.0/lucene-analyzers-kuromoji-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-phonetic/6.1.0/lucene-analyzers-phonetic-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-backward-codecs/6.1.0/lucene-backward-codecs-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-classification/6.1.0/lucene-classification-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-expressions/6.1.0/lucene-expressions-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-grouping/6.1.0/lucene-grouping-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-highlighter/6.1.0/lucene-highlighter-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-join/6.1.0/lucene-join-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-memory/6.1.0/lucene-memory-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-misc/6.1.0/lucene-misc-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-queries/6.1.0/lucene-queries-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-queryparser/6.1.0/lucene-queryparser-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-sandbox/6.1.0/lucene-sandbox-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-spatial-extras/6.1.0/lucene-spatial-extras-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/lucene/lucene-suggest/6.1.0/lucene-suggest-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
+ /home/doug/.m2/repository/com/facebook/presto/presto-parser/0.122/presto-parser-0.122.jar
+ /home/doug/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar
+ /home/doug/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.5.4/jackson-dataformat-smile-2.5.4.jar
+ /home/doug/.m2/repository/com/github/ben-manes/caffeine/caffeine/1.0.1/caffeine-1.0.1.jar
+ /home/doug/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+ /home/doug/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+ /home/doug/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar
+ /home/doug/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+ /home/doug/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+ /home/doug/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+ /home/doug/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+ /home/doug/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+ /home/doug/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar
+ /home/doug/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+ /home/doug/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+ /home/doug/.m2/repository/io/airlift/slice/0.10/slice-0.10.jar
+ /home/doug/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
+ /home/doug/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar
+ /home/doug/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+ /home/doug/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+ /home/doug/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.0/hadoop-annotations-2.6.0.jar
+ /usr/lib/jvm/java-8-openjdk-amd64/jre/../lib/tools.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.0/hadoop-auth-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.0/hadoop-hdfs-2.6.0.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar
+ /home/doug/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar
+ /home/doug/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar
+ /home/doug/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-deploy/9.3.8.v20160314/jetty-deploy-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-jmx/9.3.8.v20160314/jetty-jmx-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-rewrite/9.3.8.v20160314/jetty-rewrite-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.8.v20160314/jetty-webapp-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.8.v20160314/jetty-xml-9.3.8.v20160314.jar
+ /home/doug/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar
+ /home/doug/.m2/repository/org/locationtech/spatial4j/spatial4j/0.6/spatial4j-0.6.jar
+ /home/doug/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar
+ /home/doug/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar
+ /home/doug/.m2/repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar
+ /home/doug/.m2/repository/org/restlet/jee/org.restlet/2.3.0/org.restlet-2.3.0.jar
+ /home/doug/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.3.0/org.restlet.ext.servlet-2.3.0.jar
+ /home/doug/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar
+ /home/doug/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-solrj/6.1.0/solr-solrj-6.1.0.jar
+ /home/doug/.m2/repository/org/apache/solr/solr-test-framework/6.1.0/solr-test-framework-6.1.0.jar
+ /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/junit4-ant/2.3.4/junit4-ant-2.3.4.jar
+ /home/doug/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar]
+[DEBUG] Output directory: /home/doug/workspace/match-query-parser/target/test-classes
+[DEBUG] Adding /home/doug/workspace/match-query-parser/target/generated-test-sources/test-annotations to test-compile source roots:
+  /home/doug/workspace/match-query-parser/src/test/java
+[DEBUG] New test-compile source roots:
+  /home/doug/workspace/match-query-parser/src/test/java
+  /home/doug/workspace/match-query-parser/target/generated-test-sources/test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ match-query-parser ---
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.10:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.10:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.10:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.10:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test (scope managed from compile)
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.10
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: junit:junit:jar:3.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.0.9
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.10:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.10:test' with basic configurator -->
+[DEBUG]   (s) basedir = /home/doug/workspace/match-query-parser
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /home/doug/workspace/match-query-parser/target/classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =        id: local
+      url: file:///home/doug/.m2/repository/
+   layout: none
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.10:, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.10:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.10:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.10:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:2.1:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile}
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) project = MavenProject: com.o19s.solr.search:match-query-parser:1.0-SNAPSHOT @ /home/doug/workspace/match-query-parser/pom.xml
+[DEBUG]   (s) projectArtifactMap = {org.apache.lucene:lucene-test-framework=org.apache.lucene:lucene-test-framework:jar:6.1.0:compile, org.apache.lucene:lucene-codecs=org.apache.lucene:lucene-codecs:jar:6.1.0:compile, org.apache.lucene:lucene-core=org.apache.lucene:lucene-core:jar:6.1.0:compile, com.carrotsearch.randomizedtesting:randomizedtesting-runner=com.carrotsearch.randomizedtesting:randomizedtesting-runner:jar:2.3.4:compile, junit:junit=junit:junit:jar:4.10:compile, org.apache.solr:solr-core=org.apache.solr:solr-core:jar:6.1.0:compile, org.apache.lucene:lucene-analyzers-common=org.apache.lucene:lucene-analyzers-common:jar:6.1.0:compile, org.apache.lucene:lucene-analyzers-kuromoji=org.apache.lucene:lucene-analyzers-kuromoji:jar:6.1.0:compile, org.apache.lucene:lucene-analyzers-phonetic=org.apache.lucene:lucene-analyzers-phonetic:jar:6.1.0:compile, org.apache.lucene:lucene-backward-codecs=org.apache.lucene:lucene-backward-codecs:jar:6.1.0:compile, org.apache.lucene:lucene-classification=org.apache.lucene:lucene-classification:jar:6.1.0:compile, org.apache.lucene:lucene-expressions=org.apache.lucene:lucene-expressions:jar:6.1.0:compile, org.apache.lucene:lucene-grouping=org.apache.lucene:lucene-grouping:jar:6.1.0:compile, org.apache.lucene:lucene-highlighter=org.apache.lucene:lucene-highlighter:jar:6.1.0:compile, org.apache.lucene:lucene-join=org.apache.lucene:lucene-join:jar:6.1.0:compile, org.apache.lucene:lucene-memory=org.apache.lucene:lucene-memory:jar:6.1.0:compile, org.apache.lucene:lucene-misc=org.apache.lucene:lucene-misc:jar:6.1.0:compile, org.apache.lucene:lucene-queries=org.apache.lucene:lucene-queries:jar:6.1.0:compile, org.apache.lucene:lucene-queryparser=org.apache.lucene:lucene-queryparser:jar:6.1.0:compile, org.apache.lucene:lucene-sandbox=org.apache.lucene:lucene-sandbox:jar:6.1.0:compile, org.apache.lucene:lucene-spatial-extras=org.apache.lucene:lucene-spatial-extras:jar:6.1.0:compile, org.apache.lucene:lucene-suggest=org.apache.lucene:lucene-suggest:jar:6.1.0:compile, com.carrotsearch:hppc=com.carrotsearch:hppc:jar:0.7.1:compile, com.facebook.presto:presto-parser=com.facebook.presto:presto-parser:jar:0.122:compile, com.fasterxml.jackson.core:jackson-core=com.fasterxml.jackson.core:jackson-core:jar:2.5.4:compile, com.fasterxml.jackson.dataformat:jackson-dataformat-smile=com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.5.4:compile, com.github.ben-manes.caffeine:caffeine=com.github.ben-manes.caffeine:caffeine:jar:1.0.1:compile, com.google.guava:guava=com.google.guava:guava:jar:14.0.1:compile, com.google.protobuf:protobuf-java=com.google.protobuf:protobuf-java:jar:2.5.0:compile, com.tdunning:t-digest=com.tdunning:t-digest:jar:3.1:compile, commons-cli:commons-cli=commons-cli:commons-cli:jar:1.2:compile, commons-codec:commons-codec=commons-codec:commons-codec:jar:1.10:compile, commons-collections:commons-collections=commons-collections:commons-collections:jar:3.2.2:compile, commons-configuration:commons-configuration=commons-configuration:commons-configuration:jar:1.6:compile, commons-fileupload:commons-fileupload=commons-fileupload:commons-fileupload:jar:1.3.1:compile, commons-io:commons-io=commons-io:commons-io:jar:2.5:compile, commons-lang:commons-lang=commons-lang:commons-lang:jar:2.6:compile, dom4j:dom4j=dom4j:dom4j:jar:1.6.1:compile, io.airlift:slice=io.airlift:slice:jar:0.10:compile, javax.servlet:javax.servlet-api=javax.servlet:javax.servlet-api:jar:3.1.0:compile, joda-time:joda-time=joda-time:joda-time:jar:2.2:compile, log4j:log4j=log4j:log4j:jar:1.2.17:compile, org.antlr:antlr4-runtime=org.antlr:antlr4-runtime:jar:4.5.1-1:compile, org.apache.commons:commons-exec=org.apache.commons:commons-exec:jar:1.3:compile, org.apache.hadoop:hadoop-annotations=org.apache.hadoop:hadoop-annotations:jar:2.6.0:compile, jdk.tools:jdk.tools=jdk.tools:jdk.tools:jar:1.6:system, org.apache.hadoop:hadoop-auth=org.apache.hadoop:hadoop-auth:jar:2.6.0:compile, org.apache.hadoop:hadoop-common=org.apache.hadoop:hadoop-common:jar:2.6.0:compile, org.apache.hadoop:hadoop-hdfs=org.apache.hadoop:hadoop-hdfs:jar:2.6.0:compile, org.apache.httpcomponents:httpclient=org.apache.httpcomponents:httpclient:jar:4.4.1:compile, org.apache.httpcomponents:httpcore=org.apache.httpcomponents:httpcore:jar:4.4.1:compile, org.apache.httpcomponents:httpmime=org.apache.httpcomponents:httpmime:jar:4.4.1:compile, org.apache.zookeeper:zookeeper=org.apache.zookeeper:zookeeper:jar:3.4.6:compile, org.codehaus.woodstox:stax2-api=org.codehaus.woodstox:stax2-api:jar:3.1.4:compile, org.codehaus.woodstox:woodstox-core-asl=org.codehaus.woodstox:woodstox-core-asl:jar:4.4.1:compile, org.eclipse.jetty:jetty-continuation=org.eclipse.jetty:jetty-continuation:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-deploy=org.eclipse.jetty:jetty-deploy:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-http=org.eclipse.jetty:jetty-http:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-io=org.eclipse.jetty:jetty-io:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-jmx=org.eclipse.jetty:jetty-jmx:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-rewrite=org.eclipse.jetty:jetty-rewrite:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-security=org.eclipse.jetty:jetty-security:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-server=org.eclipse.jetty:jetty-server:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-servlet=org.eclipse.jetty:jetty-servlet:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-servlets=org.eclipse.jetty:jetty-servlets:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-util=org.eclipse.jetty:jetty-util:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-webapp=org.eclipse.jetty:jetty-webapp:jar:9.3.8.v20160314:compile, org.eclipse.jetty:jetty-xml=org.eclipse.jetty:jetty-xml:jar:9.3.8.v20160314:compile, org.htrace:htrace-core=org.htrace:htrace-core:jar:3.0.4:compile, org.locationtech.spatial4j:spatial4j=org.locationtech.spatial4j:spatial4j:jar:0.6:compile, org.noggit:noggit=org.noggit:noggit:jar:0.6:compile, org.ow2.asm:asm=org.ow2.asm:asm:jar:5.0.4:compile, org.ow2.asm:asm-commons=org.ow2.asm:asm-commons:jar:5.0.4:compile, org.restlet.jee:org.restlet=org.restlet.jee:org.restlet:jar:2.3.0:compile, org.restlet.jee:org.restlet.ext.servlet=org.restlet.jee:org.restlet.ext.servlet:jar:2.3.0:compile, org.slf4j:jcl-over-slf4j=org.slf4j:jcl-over-slf4j:jar:1.7.7:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.7:compile, org.apache.solr:solr-solrj=org.apache.solr:solr-solrj:jar:6.1.0:compile, org.apache.solr:solr-test-framework=org.apache.solr:solr-test-framework:jar:6.1.0:compile, com.carrotsearch.randomizedtesting:junit4-ant=com.carrotsearch.randomizedtesting:junit4-ant:jar:2.3.4:compile, org.apache.ant:ant=org.apache.ant:ant:jar:1.8.2:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [       id: central
+      url: http://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /home/doug/workspace/match-query-parser/target/surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@56e8b606
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = /home/doug/workspace/match-query-parser/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /home/doug/workspace/match-query-parser/src/test/java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /home/doug/workspace/match-query-parser
+[DEBUG] -- end configuration --
+[INFO] Surefire report directory: /home/doug/workspace/match-query-parser/target/surefire-reports
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-booter:jar:2.10:compile (selected for compile)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.10:compile (selected for compile)
+[DEBUG] Adding to surefire booter test classpath: /home/doug/.m2/repository/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.jar Scope: compile
+[DEBUG] Adding to surefire booter test classpath: /home/doug/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar Scope: compile
+[DEBUG] Setting system property [user.dir]=[/home/doug/workspace/match-query-parser]
+[DEBUG] Setting system property [localRepository]=[/home/doug/.m2/repository]
+[DEBUG] Setting system property [basedir]=[/home/doug/workspace/match-query-parser]
+[DEBUG] Using JVM: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-junit4:jar:2.10:test (selected for test)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.10:test (selected for test)
+[DEBUG] Adding to surefire test classpath: /home/doug/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar Scope: test
+[DEBUG] Adding to surefire test classpath: /home/doug/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar Scope: test
+[DEBUG] test classpath classpath:
+[DEBUG]   /home/doug/workspace/match-query-parser/target/test-classes
+[DEBUG]   /home/doug/workspace/match-query-parser/target/classes
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-test-framework/6.1.0/lucene-test-framework-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-codecs/6.1.0/lucene-codecs-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-core/6.1.0/lucene-core-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/randomizedtesting-runner/2.3.4/randomizedtesting-runner-2.3.4.jar
+[DEBUG]   /home/doug/.m2/repository/junit/junit/4.10/junit-4.10.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/solr/solr-core/6.1.0/solr-core-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-common/6.1.0/lucene-analyzers-common-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-kuromoji/6.1.0/lucene-analyzers-kuromoji-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-analyzers-phonetic/6.1.0/lucene-analyzers-phonetic-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-backward-codecs/6.1.0/lucene-backward-codecs-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-classification/6.1.0/lucene-classification-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-expressions/6.1.0/lucene-expressions-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-grouping/6.1.0/lucene-grouping-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-highlighter/6.1.0/lucene-highlighter-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-join/6.1.0/lucene-join-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-memory/6.1.0/lucene-memory-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-misc/6.1.0/lucene-misc-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-queries/6.1.0/lucene-queries-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-queryparser/6.1.0/lucene-queryparser-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-sandbox/6.1.0/lucene-sandbox-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-spatial-extras/6.1.0/lucene-spatial-extras-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/lucene/lucene-suggest/6.1.0/lucene-suggest-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
+[DEBUG]   /home/doug/.m2/repository/com/facebook/presto/presto-parser/0.122/presto-parser-0.122.jar
+[DEBUG]   /home/doug/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar
+[DEBUG]   /home/doug/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.5.4/jackson-dataformat-smile-2.5.4.jar
+[DEBUG]   /home/doug/.m2/repository/com/github/ben-manes/caffeine/caffeine/1.0.1/caffeine-1.0.1.jar
+[DEBUG]   /home/doug/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[DEBUG]   /home/doug/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+[DEBUG]   /home/doug/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar
+[DEBUG]   /home/doug/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+[DEBUG]   /home/doug/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+[DEBUG]   /home/doug/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+[DEBUG]   /home/doug/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar
+[DEBUG]   /home/doug/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+[DEBUG]   /home/doug/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar
+[DEBUG]   /home/doug/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[DEBUG]   /home/doug/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+[DEBUG]   /home/doug/.m2/repository/io/airlift/slice/0.10/slice-0.10.jar
+[DEBUG]   /home/doug/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar
+[DEBUG]   /home/doug/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[DEBUG]   /home/doug/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.0/hadoop-annotations-2.6.0.jar
+[DEBUG]   /usr/lib/jvm/java-8-openjdk-amd64/jre/../lib/tools.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.0/hadoop-auth-2.6.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.0/hadoop-hdfs-2.6.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/httpcomponents/httpmime/4.4.1/httpmime-4.4.1.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar
+[DEBUG]   /home/doug/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar
+[DEBUG]   /home/doug/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-deploy/9.3.8.v20160314/jetty-deploy-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-jmx/9.3.8.v20160314/jetty-jmx-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-rewrite/9.3.8.v20160314/jetty-rewrite-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.8.v20160314/jetty-webapp-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.8.v20160314/jetty-xml-9.3.8.v20160314.jar
+[DEBUG]   /home/doug/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar
+[DEBUG]   /home/doug/.m2/repository/org/locationtech/spatial4j/spatial4j/0.6/spatial4j-0.6.jar
+[DEBUG]   /home/doug/.m2/repository/org/noggit/noggit/0.6/noggit-0.6.jar
+[DEBUG]   /home/doug/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar
+[DEBUG]   /home/doug/.m2/repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar
+[DEBUG]   /home/doug/.m2/repository/org/restlet/jee/org.restlet/2.3.0/org.restlet-2.3.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.3.0/org.restlet.ext.servlet-2.3.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar
+[DEBUG]   /home/doug/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/solr/solr-solrj/6.1.0/solr-solrj-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/solr/solr-test-framework/6.1.0/solr-test-framework-6.1.0.jar
+[DEBUG]   /home/doug/.m2/repository/com/carrotsearch/randomizedtesting/junit4-ant/2.3.4/junit4-ant-2.3.4.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+[DEBUG] provider classpath classpath:
+[DEBUG]   /home/doug/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar
+[DEBUG]   /home/doug/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Forking command line: /bin/sh -c cd /home/doug/workspace/match-query-parser && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /home/doug/workspace/match-query-parser/target/surefire/surefirebooter1138739510798308588.jar /home/doug/workspace/match-query-parser/target/surefire/surefire7825043302251764751tmp /home/doug/workspace/match-query-parser/target/surefire/surefire2116143432509433598tmp
+Running com.o19s.solr.search.MatchQParserTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Creating dataDir: /tmp/com.o19s.solr.search.MatchQParserTest_6D7107AF3D27A502-001/init-core-data-001
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.094 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.612s
+[INFO] Finished at: Wed Aug 10 12:10:23 EDT 2016
+[INFO] Final Memory: 19M/429M
+[INFO] ------------------------------------------------------------------------
