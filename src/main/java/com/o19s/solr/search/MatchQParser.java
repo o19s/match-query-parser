@@ -84,8 +84,8 @@ public class MatchQParser extends QParser {
         // Field type to use for query-time analysis, for example
         // you may just want to create a field type for the sole purpose
         // of using its analyzer to query this field
-        // - Defaults to qf
-        String ft = getBestParam(params, localParams, "ft", qf);
+        // - Defaults to qf's field
+        String ft = getBestParam(params, localParams, "analyzer", null);
 
         // Clause type this query will generate after analysis
         // - -- term (default) -- transforms analyzed query tokens into term queries

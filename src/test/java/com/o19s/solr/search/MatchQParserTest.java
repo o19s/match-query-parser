@@ -34,11 +34,11 @@ public class MatchQParserTest extends SolrTestCaseJ4 {
         // formulate a query that will by analyzed by the shingle field type and then turned into a phrase query
         assertQ("analyze with other field",
                 req("defType", "match",
-                    "q", "hello cincinatti bengals",
-                    "qt", "select",
-                    "qf", "text",
-                    "ct", "phrase",
-                    "ft", "shingled"),
+                    "q",        "hello cincinatti bengals",
+                    "qt",       "select",
+                    "qf",       "text",
+                    "ct",       "phrase",
+                    "analyzer", "shingled"),
                 "//*[@numFound='1']", "//result/doc[1]/str[@name='id'][.='3']"
                 );
 
