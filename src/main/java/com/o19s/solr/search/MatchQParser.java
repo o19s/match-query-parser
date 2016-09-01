@@ -9,6 +9,7 @@ import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.*;
 import org.apache.lucene.util.IOUtils;
+import org.apache.solr.common.SolrException;
 import org.apache.solr.common.params.SolrParams;
 import org.apache.solr.request.SolrQueryRequest;
 import org.apache.solr.schema.FieldType;
@@ -39,7 +40,7 @@ public class MatchQParser extends QParser {
             return (Term clauseTerm) -> {
                 return new TermQuery(clauseTerm);
             };
-        } else {
+        } else if (clauseType == "phrase") {
             return (Term clauseTerm) -> {
                 StringReader stringReader = new StringReader(clauseTerm.text());
                 CharTermAttribute term = phraseTok.addAttribute(CharTermAttribute.class);
@@ -57,6 +58,10 @@ public class MatchQParser extends QParser {
             };
 
         }
+
+        return (Term clauseTerm) -> {
+            throw new SolrException(SolrException.ErrorCode.BAD_REQUEST, "clauseType " + clauseType + " not recoginzed");
+        };
     }
 
     private String getBestParam(SolrParams globalParams, SolrParams localParams, String parameter, String defVal) {
@@ -74,6 +79,14 @@ public class MatchQParser extends QParser {
         return qStr;
     }
 
+    private Analyzer selectBestQueryAnalyzer(String fieldTypeForAnalysis, String qf) {
+        if (fieldTypeForAnalysis != null) {
+            return req.getSchema().getFieldTypeByName(fieldTypeForAnalysis).getQueryAnalyzer();
+        } else {
+            return req.getSchema().getFieldType(qf).getQueryAnalyzer();
+        }
+    }
+
     public MatchQParser(String qstr, SolrParams localParams, SolrParams params, SolrQueryRequest req) {
         super(qstr, localParams, params, req);
     }
@@ -85,14 +98,14 @@ public class MatchQParser extends QParser {
         // you may just want to create a field type for the sole purpose
         // of using its analyzer to query this field
         // - Defaults to qf's field
-        String ft = getBestParam(params, localParams, "analyzer", null);
+        String fieldTypeForAnalysis = getBestParam(params, localParams, "analyze_as", null);
 
-        // Clause type this query will generate after analysis
+        // Clause type to use for each token generated after analysis
         // - -- term (default) -- transforms analyzed query tokens into term queries
         // - -- phrase         -- each query token is treated as if a phrase,
         //                        for example if a bigram is generated, and the
         //                        phrase delimeter is whitespace, then
-        String ct = getBestParam(params, localParams, "ct", "term");
+        String ct = getBestParam(params, localParams, "search_with", "term");
 
         // Phrase tok (ptok) will control how phrase queries are generated from
         // analysis
@@ -109,11 +122,10 @@ public class MatchQParser extends QParser {
 
         QueryFactory baseQueryFactory = createQueryFactory(qf, ct, ptok, pslop, ptok);
 
-        FieldType fieldType = req.getSchema().getFieldTypeByName(ft);
-        Analyzer ftQAnalyzer = fieldType.getQueryAnalyzer();
+        Analyzer ftQAnalyzer = selectBestQueryAnalyzer(fieldTypeForAnalysis, qf);
         TokenStream tokenStream = null;
         try {
-            tokenStream = ftQAnalyzer.tokenStream(ft, new StringReader(queryText));
+            tokenStream = ftQAnalyzer.tokenStream(fieldTypeForAnalysis, new StringReader(queryText));
 
             BooleanQuery.Builder bqBuilder = new BooleanQuery.Builder();
 
