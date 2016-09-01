@@ -1,7 +1,9 @@
 (IN PROGRESS, NOT READY FOR PRIME TIME)
 
 # Match Query Parser
-This query parser gives you very fine control over how an individual field is queried. This control comes in two phases:
+
+Tight control over query string analysis and search of one field.
+
 
 ## 1. Control query string parsing by specifying any analyzer
 

@@ -36,19 +36,19 @@ public class MatchQParserTest extends SolrTestCaseJ4 {
 
 
         assertQ("analyze with other field",
-                req("defType",     "match",
-                        "q",           "hello world",
-                        "qt",          "select",
-                        "qf",          "text"),
+                req("defType", "match",
+                        "q", "hello world",
+                        "qt", "select",
+                        "qf", "text"),
                 "//*[@numFound='3']"
         );
 
         assertQ("analyze with other field",
-                req("defType",     "match",
-                        "q",           "hello world",
-                        "qt",          "select",
-                        "qf",          "text",
-                        "mm",          "100%"),
+                req("defType", "match",
+                        "q", "hello world",
+                        "qt", "select",
+                        "qf", "text",
+                        "mm", "100%"),
                 "//*[@numFound='2']"
         );
 
@@ -64,16 +64,33 @@ public class MatchQParserTest extends SolrTestCaseJ4 {
         assertU(optimize());
 
 
-            // formulate a query that will by analyzed by the shingle field type and then turned into a phrase query
-        assertQ("analyze with other field",
-                req("defType",     "match",
-                    "q",           "hello cincinatti bengals",
-                    "qt",          "select",
-                    "qf",          "text",
-                    "search_with", "phrase",
-                    "analyze_as",  "shingled"),
+        // formulate a query that will by analyzed by the shingle field type and then turned into a phrase query
+        assertQ("analyze with shingle field, search phrases",
+                req("defType", "match",
+                        "q", "hello cincinatti bengals",
+                        "qt", "select",
+                        "qf", "text",
+                        "search_with", "phrase",
+                        "analyze_as", "shingled"),
                 "//*[@numFound='1']", "//result/doc[1]/str[@name='id'][.='3']"
-                );
+        );
     }
 
+    @Test
+    public void testMultitermSynonyms() throws SAXException {
+        assertNull(h.validateUpdate(adoc("id", "1", "text", "seabiscuit")));
+        assertNull(h.validateUpdate(adoc("id", "2", "text", "sea biscuit the lonely horse")));
+        assertNull(h.validateUpdate(commit()));
+        assertU(optimize());
+
+        // formulate a query that will by analyzed by the shingle field type and then turned into a phrase query
+        assertQ("analyze with syn field, search phrases, defeat multi term synonyms",
+                req("defType", "match",
+                        "q", "sea biscuit",
+                        "qt", "select",
+                        "qf", "text",
+                        "search_with", "phrase",
+                        "analyze_as", "synonymized"),
+                "//*[@numFound='2']");
+    }
 }
