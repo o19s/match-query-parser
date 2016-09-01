@@ -1,5 +1,3 @@
-(IN PROGRESS, NOT READY FOR PRIME TIME)
-
 # Match Query Parser
 
 Tightly control how Solr queries are parsed and executed.
