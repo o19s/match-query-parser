@@ -30,6 +30,16 @@
 
         </fieldType>
 
+        <fieldType name="wstext" class="solr.TextField">
+
+            <analyzer>
+                <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+                <filter class="solr.LowerCaseFilterFactory"/>
+            </analyzer>
+
+        </fieldType>
+
+
         <fieldType name="shingled" class="solr.TextField">
 
             <analyzer type="index">
@@ -48,6 +58,7 @@
     <fields>
         <field name="id" type="string" indexed="true" stored="true" />
         <field name="non_tok" type="non_tokenized" indexed="true" stored="true" />
+        <field name="text" type="wstext" indexed="true" stored="true" />
         <field name="non_tok_shingles" type="shingled" indexed="true" stored="true" multiValued="true"/>
     </fields>
 </schema>

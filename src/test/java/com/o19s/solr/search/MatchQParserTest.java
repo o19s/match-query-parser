@@ -24,4 +24,24 @@ public class MatchQParserTest extends SolrTestCaseJ4 {
         assertNull(h.validateUpdate(commit()));
     }
 
+    @Test
+    public void testBigramPhraseSearch() throws SAXException {
+        assertNull(h.validateUpdate(adoc("id", "1", "text", "HELLO WORLD")));
+        assertNull(h.validateUpdate(adoc("id", "2", "text", "hello world and cincinatti")));
+        assertNull(h.validateUpdate(adoc("id", "3", "text", "hello cincinatti bananas")));
+        assertNull(h.validateUpdate(commit()));
+
+        // formulate a query that will by analyzed by the shingle field type and then turned into a phrase query
+        assertQ("analyze with other field",
+                req("defType", "match",
+                    "q", "hello cincinatti bengals",
+                    "qt", "select",
+                    "qf", "text",
+                    "ct", "phrase",
+                    "ft", "shingled"),
+                "//*[@numFound='1']", "//result/doc[1]/str[@name='id'][.='3']"
+                );
+
+    }
+
 }

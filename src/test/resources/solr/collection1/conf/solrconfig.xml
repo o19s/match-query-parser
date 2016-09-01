@@ -45,12 +45,13 @@
         <lst name="defaults">
             <str name="echoParams">explicit</str>
             <str name="indent">true</str>
+            <str name="df">text</str>
         </lst>
 
     </requestHandler>
 
     <queryParser name="match" class="com.o19s.solr.search.MatchQParserPlugin">
     </queryParser>
-
+    <schemaFactory class="ClassicIndexSchemaFactory"/>
 
 </config>
