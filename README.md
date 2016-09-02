@@ -4,19 +4,22 @@ Tightly control how Solr query parsing and execution by parsing the user's full 
 
 as an edismax boost:
 
-q=sea biscuit likes to fish&**bq={!match analyze_as=text_synonym search_with=phrase qf=body v=$q}**
+q=sea biscuit likes to fish&**bq={!match analyze_as=text_synonym search_with=term qf=body v=$q}**
 
-Match qp goes through these three steps
+Match qp goes through these steps:
 
-1. Analyze the query string using `text_synonym` field type, perhaps resulting in `[seabiscuit][sea biscuit] [likes] [to] [fish]`
-2. Treat the resulting tokens as term queries `(sea biscuit | seabiscuit) OR likes OR to OR fish`
-3. Search the `body` field 
+1. Analyze the query string using `text_synonym` field type, perhaps resulting in tokens `[seabiscuit][sea] [biscuit] [likes] [to] [fish]`
+2. Treat the resulting tokens as term queries, with dismax for overlapping posns: `(sea biscuit | sea | biscuit) OR likes OR to OR fish`
 
-The ability control analysis and the type of query used let's you apply an extreme level of control to search. For example, if you repeat the above example with a shingle analyzer, you can run a bigram search (like pf2 in edismax):
+Match QP gives you an extremely high level of control over the search. You control both query analysis and the resulting lucene queries. For example, if you repeat the above example with a shingle analyzer, you can run a bigram search (like pf2 in edismax):
 
 1. Analyze the query string using `text_shingle` field type, perhaps resulting in `[sea biscuit] [biscuit likes] [likes to]` ... 
-2. Treat the resulting tokens as phrase queries `("sea biscuit" OR "biscuit likes" OR "likes to" ...)`
-3. Search the `body` field
+2. Treat the resulting tokens as phrase queries by setting `search_with=phrase`: `("sea biscuit" OR "biscuit likes" OR "likes to" ...)`
+
+Or with a synonym analysis that outputs full synonyms as individual tokens, but with `search_with=phrase`:
+
+1. `[seabiscuit][sea biscuit] [likes] [to] [fish]`
+2. `("sea biscuit" | seabiscuit) OR likes OR to OR fish`
 
 Read more in [this tutorial](TUTORIAL.md).
 
@@ -39,6 +42,7 @@ If omitted, uses the query analysis of qf.
  - `term` the tokens output from analysis from step (1) above are turned into term queries
  - `phrase` the tokens output  from analysis from step (1) are whitespace tokenized, and turned into phrase queries   
  
+
  An important note about position overlaps. In the above example, we pretended that seabiscuit was transformed into just `[sea biscuit]` when in reality, both tokens `[seabiscuit]` and `[sea biscuit]` would be omitted in the same position. In this case, tokens in the same position are wrapped in a DisjunctionMaximum (dismax) query. So the actual query would be, using | to show the dismax operation
   
  `("sea biscuit" | seabiscuit) OR likes OR to OR fish` 
