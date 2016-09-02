@@ -4,19 +4,18 @@ Tightly control how Solr query parsing and execution by parsing the user's full 
 
 as an edismax boost:
 
-q=seabiscuit likes to fish&**bq={!match analyze_as=text_synonym search_with=phrase qf=body v=$q}**
-
+q=sea biscuit likes to fish&**bq={!match analyze_as=text_synonym search_with=phrase qf=body v=$q}**
 
 Match qp goes through these three steps
 
-1. Analyze the query string using `text_synonym` field type, perhaps resulting in `[sea biscuit] [likes] [to] [fish]`
-2. Treat the resulting tokens as phrase queries `"sea biscuit" OR "likes" OR "to" OR "fish"`
+1. Analyze the query string using `text_synonym` field type, perhaps resulting in `[seabiscuit][sea biscuit] [likes] [to] [fish]`
+2. Treat the resulting tokens as term queries `(sea biscuit | seabiscuit) OR likes OR to OR fish`
 3. Search the `body` field 
 
-The ability control analysis and the type of query used let's you apply an extreme level of control to search. For example, if you repeat the above example with a shingle analyzer, you can recreate the behavior of pf2 in edismax:
+The ability control analysis and the type of query used let's you apply an extreme level of control to search. For example, if you repeat the above example with a shingle analyzer, you can run a bigram search (like pf2 in edismax):
 
 1. Analyze the query string using `text_shingle` field type, perhaps resulting in `[sea biscuit] [biscuit likes] [likes to]` ... 
-2. Treat the resulting tokens as phrase queries `"sea biscuit" OR "biscuit likes" OR "likes to" ...`
+2. Treat the resulting tokens as phrase queries `("sea biscuit" OR "biscuit likes" OR "likes to" ...)`
 3. Search the `body` field
 
 Read more in [this tutorial](TUTORIAL.md).
