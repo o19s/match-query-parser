@@ -1,6 +1,6 @@
 # Match Query Parser
 
-Tightly control how Solr queries are parsed and executed by parsing the query using a query analyzer, not whitespace tokenized. (happens to also be a fix for multiterm synonyms).
+Tightly control how Solr query parsing and execution by parsing the user's full query using a query analyzer. (happens to also be a fix for multiterm synonyms).
 
 as an edismax boost:
 
