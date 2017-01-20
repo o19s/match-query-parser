@@ -11,7 +11,7 @@
 
     <groupId>com.o19s.solr.search</groupId>
     <artifactId>match-query-parser</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 
     <dependencies>
     <dependency>
