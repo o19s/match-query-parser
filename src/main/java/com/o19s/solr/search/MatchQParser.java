@@ -36,11 +36,11 @@ public class MatchQParser extends QParser {
     private QueryFactory createQueryFactory(String qf, String clauseType, String ptok, int pslop, String tokenizer) {
         Tokenizer phraseTok = new WhitespaceTokenizer();
 
-        if (clauseType == "term") {
+        if (clauseType.equals("term")) {
             return (Term clauseTerm) -> {
                 return new TermQuery(clauseTerm);
             };
-        } else if (clauseType == "phrase") {
+        } else if (clauseType.equals("phrase")) {
             return (Term clauseTerm) -> {
                 StringReader stringReader = new StringReader(clauseTerm.text());
                 CharTermAttribute term = phraseTok.addAttribute(CharTermAttribute.class);
