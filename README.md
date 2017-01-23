@@ -23,6 +23,17 @@ Or with a synonym analysis that outputs full synonyms as individual tokens, but 
 
 Read more in [this tutorial](TUTORIAL.md).
 
+# Download and Install
+
+- Download plugin for [Solr 6.x](http://matchqp.labs.o19s.com/match-query-parser-0.1.0-solr6.0.0.jar)
+- Place in a [sutible location for plugins](https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins)
+- Add XML to your sorlconfig.xml:
+    
+```
+<queryParser name="match" class="com.o19s.solr.search.MatchQParserPlugin">
+```
+
+
 # Parameters
 
 ### qf
