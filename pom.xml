@@ -7,6 +7,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <lucene.solr.version>6.1.0</lucene.solr.version>
     </properties>
 
     <groupId>com.o19s.solr.search</groupId>
@@ -17,24 +18,25 @@
     <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-test-framework</artifactId>
-        <version>6.1.0</version>
+        <version>${lucene.solr.version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-core</artifactId>
-        <version>6.1.0</version>
+        <version>${lucene.solr.version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-solrj</artifactId>
-        <version>6.1.0</version>
+        <version>${lucene.solr.version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-test-framework</artifactId>
-        <version>6.1.0</version>
+        <version>${lucene.solr.version}</version>
     </dependency>
     </dependencies>
+    <packaging>jar</packaging>
     <build>
         <plugins>
             <plugin>
@@ -55,5 +57,6 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+        <finalName>${artifactId}-${version}-solr${lucene.solr.version}</finalName>
+		</build>
 </project>
