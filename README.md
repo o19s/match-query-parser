@@ -1,6 +1,6 @@
 # Match Query Parser
 
-Tightly control how Solr query parsing and execution by parsing the user's full query using a query analyzer. (happens to also be a fix for multiterm synonyms).
+Tightly control how Solr query parsing and execution by parsing the user's full query using a query analyzer. (happens to also be a fix for multiterm synonyms). Read more in [this blog post](http://opensourceconnections.com/blog/2017/01/23/our-solution-to-solr-multiterm-synonyms/).
 
 as an edismax boost:
 
@@ -21,7 +21,7 @@ Or with a synonym analysis that outputs full synonyms as individual tokens, but 
 1. `[seabiscuit][sea biscuit] [likes] [to] [fish]`
 2. `("sea biscuit" | seabiscuit) OR likes OR to OR fish`
 
-Read more in [this tutorial](TUTORIAL.md).
+Read more in [this tutorial](TUTORIAL.md) and [this  blog](http://opensourceconnections.com/blog/2017/01/23/our-solution-to-solr-multiterm-synonyms/)
 
 # Download and Install
 
