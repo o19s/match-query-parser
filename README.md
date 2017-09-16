@@ -1,9 +1,10 @@
 # Match Query Parser
 
-Tightly control how Solr query parsing and execution by parsing the user's full query using a query analyzer. (happens to also be a fix for multiterm synonyms). Read more in [this blog post](http://opensourceconnections.com/blog/2017/01/23/our-solution-to-solr-multiterm-synonyms/).
+Tightly control how Solr query parsing and execution by passing the query analyzer at query time. Read more in [this blog post](http://opensourceconnections.com/blog/2017/01/23/our-solution-to-solr-multiterm-synonyms/).
 
-- `analyze_as` -- which field type's query analyzer should be used to analyze this query
-- `search_with` -- if `term`, treats each resulting token as a single term query. if `phrase`, turns token [sea biscuit] into "sea biscuit" phrase query 
+- `analyze_as` -- which field type's query analyzer should be used to extract tokens from the user's query
+- `search_with` -- if `term`, treats each resulting query token as a single term query. if `phrase`, turns multiterm tokens into phrase queries
+- `qf` -- the field to search
 
 as an example:
 
