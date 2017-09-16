@@ -2,11 +2,14 @@
 
 Tightly control how Solr query parsing and execution by parsing the user's full query using a query analyzer. (happens to also be a fix for multiterm synonyms). Read more in [this blog post](http://opensourceconnections.com/blog/2017/01/23/our-solution-to-solr-multiterm-synonyms/).
 
-as an edismax boost:
+- `analyze_as` -- which field type's query analyzer should be used to analyze this query
+- `search_with` -- if `term`, treats each resulting token as a single term query. if `phrase`, turns token [sea biscuit] into "sea biscuit" phrase query 
+
+as an example:
 
 q=sea biscuit likes to fish&**bq={!match analyze_as=text_synonym search_with=term qf=body v=$q}**
 
-Match qp goes through these steps:
+Match qp goes through the steps:
 
 1. Analyze the query string using `text_synonym` field type, perhaps resulting in tokens `[seabiscuit][sea] [biscuit] [likes] [to] [fish]`
 2. Treat the resulting tokens as term queries, with dismax for overlapping posns: `(sea biscuit | sea | biscuit) OR likes OR to OR fish`
