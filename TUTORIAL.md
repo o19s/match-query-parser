@@ -56,8 +56,19 @@ sea biscuit => seabiscuit, sea_biscuit_the_lonely_horse, sea_biscuit
 and add a step to synonymized to turn underscores into spaces:
 
 ```
-<filter class="solr.PatternReplaceFilterFactory" pattern="(_)" replacement=" "
-        replace="all"/>
+       <fieldType name="synonymized" class="solr.TextField">
+            <analyzer type="query">
+                <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+                <filter class="solr.LowerCaseFilterFactory"/>
+                <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt"
+                        format="solr" ignoreCase="false" expand="true"
+                        tokenizerFactory="solr.WhitespaceTokenizerFactory"/>
+                        
+                <filter class="solr.PatternReplaceFilterFactory" pattern="(_)" replacement=" "
+                        replace="all"/>
+            </analyzer>
+        </fieldType>
+
 ```
 
 
