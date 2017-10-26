@@ -50,7 +50,7 @@ Of course, this isn't typically what you want with synonyms. You likely want to 
 One way to do this would be to use a slighly different `synonyms.txt` file.
 
 ```
-sea biscuit => seabiscuit, sea_biscuit_the_lonely_horse
+sea biscuit => seabiscuit, sea_biscuit_the_lonely_horse, sea_biscuit
 ``` 
 
 and add a step to synonymized to turn underscores into spaces:
