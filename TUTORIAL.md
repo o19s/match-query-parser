@@ -45,15 +45,15 @@ This query will search for sea biscuit in field body, but will also search for a
 
 By default, match qp will turn the resulting tokens into term queries that are OR'd together. For example, `sea OR biscuit OR the OR lonely OR horse`. 
 
-Of course, this isn't typically what you want with synonyms. You likely want to search for the phrase "sea biscuit the lonely horse" as a full phrase. So match qp let's you control how to treat the resulting tokens. We just need to generate "sea biscuit the lonely horse" as a single term from analysis.
+Of course, this isn't typically what you want with synonyms. You likely want to search for the phrase "sea biscuit the lonely horse" as a full phrase. So match qp let's you control how to treat the resulting tokens. We just need to generate "sea biscuit the lonely horse" (and all other representations) as single terms from analysis. 
 
-One way to do this would be to use a slighly different `synonyms.txt` file.
+Such a synonym.txt file would be:
 
 ```
 sea biscuit => seabiscuit, sea_biscuit_the_lonely_horse, sea_biscuit
 ``` 
 
-and add a step to synonymized to turn underscores into spaces:
+and add we'd need a step to the fieldType query analyzer to turn underscores into spaces. See the PatternReplaceFilterFactory below:
 
 ```
        <fieldType name="synonymized" class="solr.TextField">
@@ -63,7 +63,7 @@ and add a step to synonymized to turn underscores into spaces:
                 <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt"
                         format="solr" ignoreCase="false" expand="true"
                         tokenizerFactory="solr.WhitespaceTokenizerFactory"/>
-                        
+         
                 <filter class="solr.PatternReplaceFilterFactory" pattern="(_)" replacement=" "
                         replace="all"/>
             </analyzer>
