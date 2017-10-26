@@ -25,7 +25,7 @@ Read more in [this tutorial](TUTORIAL.md) and [this  blog](http://opensourceconn
 
 # Download and Install
 
-- Download plugin for [Solr 6.x](http://matchqp.labs.o19s.com/match-query-parser-0.1.0-solr6.0.0.jar)
+- Download plugin for [Solr 6.0](http://matchqp.labs.o19s.com/match-query-parser-0.1.0-solr6.0.0.jar) | [Solr 6.6](http://matchqp.labs.o19s.com/match-query-parser-0.1.0-solr6.0.0.jar)
 - Place in a [sutible location for plugins](https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins)
 - Add XML to your sorlconfig.xml:
     

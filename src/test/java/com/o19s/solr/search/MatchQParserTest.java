@@ -1,6 +1,5 @@
 package com.o19s.solr.search;
 
-import com.facebook.presto.sql.tree.Except;
 import org.apache.solr.SolrTestCaseJ4;
 import org.junit.After;
 import org.junit.Before;
