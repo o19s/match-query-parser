@@ -51,9 +51,13 @@ Such a synonym.txt file would be:
 
 ```
 sea biscuit => seabiscuit, sea_biscuit_the_lonely_horse, sea_biscuit
+seabiscuit => seabiscuit, sea_biscuit_the_lonely_horse, sea_biscuit
+...
 ``` 
 
-and add we'd need a step to the fieldType query analyzer to turn underscores into spaces. See the PatternReplaceFilterFactory below:
+Here the left hand side becomes the representation in the user's query string, and the right hand side becomes all possible expansions into phrase searches.
+
+We'd need a step to the fieldType query analyzer to turn underscores into spaces. See the PatternReplaceFilterFactory below:
 
 ```
        <fieldType name="synonymized" class="solr.TextField">
