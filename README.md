@@ -30,7 +30,7 @@ Read more in [this tutorial](TUTORIAL.md) and [this  blog](http://opensourceconn
 - Add XML to your sorlconfig.xml:
     
 ```
-<queryParser name="match" class="com.o19s.solr.search.MatchQParserPlugin">
+<queryParser name="match" class="com.o19s.solr.search.MatchQParserPlugin"></queryParser>
 ```
 
 
