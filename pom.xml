@@ -7,7 +7,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <lucene.solr.version>7.6.0</lucene.solr.version>
+        <lucene.solr.version>8.4.1</lucene.solr.version>
     </properties>
 
     <groupId>com.o19s.solr.search</groupId>
